@@ -1,0 +1,10 @@
+langgraph
+langchain
+langchain-community
+langchain-ollama
+sqlalchemy
+pandas
+matplotlib
+chromadb
+pydantic
+streamlit
