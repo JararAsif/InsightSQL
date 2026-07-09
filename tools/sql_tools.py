@@ -5,7 +5,7 @@ DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'database', '
 
 def get_db() -> SQLDatabase:
     """Initializes and returns the LangChain SQLDatabase wrapper."""
-    return SQLDatabase.from_uri(f"sqlite:///{DB_PATH}")
+    return SQLDatabase.from_uri(f"sqlite:///{DB_PATH}", sample_rows_in_table_info=1000)
 
 def get_schema() -> str:
     """
