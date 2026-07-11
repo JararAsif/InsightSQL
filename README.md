@@ -92,8 +92,3 @@ By compiling the graph with `MemorySaver()` and passing a `thread_id` config, La
    ```bash
    python app.py
    ```
-
-## Future Improvements
-* **Human-in-the-loop**: Add an `interrupt_before` on the Executor node so the user must click "Approve" before any query runs.
-* **Vector Search**: Use `chromadb` to search through thousands of tables semantically if the schema gets too large to fit in the prompt window.
-* **Docker Sandboxing**: Move the `python_tool.py` execution into an isolated container (like E2B) for security.
